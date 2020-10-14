@@ -4,12 +4,13 @@
 #include<stdlib.h>
 
 //variaveis
-
 long int tel;
 char end[100], sabor[20];
 char refri;
 float total=0, totgeral=0;
 int qtd=0;
+//
+
 
 float calc_pedido(char psabor[20], char prefri)
 {
@@ -26,11 +27,13 @@ float calc_pedido(char psabor[20], char prefri)
     return val;
 }
 
+
 void calc_tot (float ptotal)
 {
     qtd++;
     totgeral=totgeral+ptotal;
 }
+
 
 main()
 {
@@ -39,7 +42,7 @@ main()
     while(tel!=0)
     {
         printf("\nEndereco: ");
-        scanf("%[ˆ\n]s", &end);
+        scanf("%s", &end);
 
         printf("\nSabor da pizza[ Muzzarela, Portuguesa ou Camarao]");
         scanf("%s", &sabor);
@@ -47,18 +50,17 @@ main()
         printf("\nRefrigerante [S/N]?");
         scanf("%s", &refri);
 
-        printf("\nTelefone com DDD:");
-        scanf("%d", &tel);
-
         total = calc_pedido(sabor, refri);
 
         printf("\no total a pagar eh: %.2f", total);
 
         calc_tot(total);
+
+        printf("\nTelefone com DDD:");
+        scanf("%d", &tel);
     }
+
     //Exibir os resultados
     printf("\no total dos pedidos foi: %d", qtd);
-     printf("\no total do faturamento foi: %.2f", totgeral);
-
-
+    printf("\no total do faturamento foi: %.2f", totgeral);
 }
