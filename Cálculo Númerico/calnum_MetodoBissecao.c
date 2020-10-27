@@ -1,7 +1,8 @@
 /*
 Calculo Numerico
-Data:26.08.20
 Nome: Kezia Campos
+Data: 26.08.20
+Metodo da Bissecao
 */
 
 #include<stdio.h>

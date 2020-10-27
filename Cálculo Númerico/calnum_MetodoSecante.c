@@ -1,7 +1,7 @@
 /*
 Calculo Numerico
 Nome: Kezia Campos
-
+Data: 14.09.20
 Metodo da secante
 */
 

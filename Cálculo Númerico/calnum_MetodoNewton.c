@@ -1,7 +1,7 @@
 /*
 Calculo Numerico
 Nome: Kezia Campos
-
+Data: 30.09.20
 Metodo de Newton
 */
 

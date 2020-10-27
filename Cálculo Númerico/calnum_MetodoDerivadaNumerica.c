@@ -1,3 +1,10 @@
+/*
+Calculo Numerico
+Nome: Kezia Campos
+Data: 22.09.20
+Metodo da Derivada Numerica
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
