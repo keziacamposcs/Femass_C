@@ -19,6 +19,22 @@ double f (float x)
 	return (pow(x, 2) - x - 9);
 }
 
+//Trapezio
+double trapezio (float xa, float xb, float xn)
+{
+	//altura dos trapezios
+	h=(xb-xa)/xn;
+	
+	y = (fabs(f(xa)) + fabs(f(xb))) /2.0;
+	
+	for (i=1; i<xn; i++)
+	{
+		y = y +   fabs(f(xa+i*h));
+	}
+	
+	y = h * y;
+}
+
 //Principal
 main()
 {
@@ -48,16 +64,7 @@ main()
 	}while(n<=0);
 	
 	
-	h=(b-a)/n;
-	
-	y = f(a) + f(b);
-	
-	for (i=1; i<n; i++)
-	{
-		y = y + 2 * f(a+i*h);
-	}
-	
-	y = (h/2) * y;
+	trapezio (a, b, n);
 	
 	printf("O valor da integral eh: %f \n ", y);	
 }
