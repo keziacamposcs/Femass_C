@@ -1,3 +1,10 @@
+/*
+Calculo Numerico
+Nome: Kezia Campos
+Data: 04.11.20
+Metodo de Simpsons
+*/
+
 #include <stdio.h>
 #include <math.h>
 
