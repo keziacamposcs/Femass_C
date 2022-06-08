@@ -1,1 +1,9 @@
-![alt text](https://github.com/keziacamposcs/Femass_progC/blob/main/perfilgithubc.png)
+
+# FEMASS - C 💻
+
+Repositório contendo programas feito em linguagem C em específicas matérias do curso de Sistemas de Informação na FEMASS
+
+
+## 🛠 Ferramentas
+
+- IDE: DevC++
